@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="app">
+        <div class="screen join-screen active">
+            <div class="form">
+                <h2>LOVE</h2>
+                <div class="form-input">
+                    <label>Name</label>
+                    <input type="text" class="form-control" id="username">
+                </div>
+                <!-- /.form-input -->
+                <div class="form-input">
+                    <button id="join-user">join</button>
+                </div>
+                <!-- /.form-input -->
+            </div>
+            <!-- /.form -->
+        </div>
+        <!-- /.screen -->
+        <div class="screen chat-screen">
+            <div class="header">
+                <div class="logo">Love</div>
+                <!-- /.logo -->
+                <button id="exit-chat">Exit</button>
+            </div>
+            <!-- /.header -->
+            <div class="messages">
+                
+            </div>
+            <!-- /.message -->
+            <div class="typebox">
+                <input type="text" id="message-input">
+                <button id="send-message">Send</button>
+            </div>
+            <!-- /.typebox -->
+
+        </div>
+        <!-- /.screen -->
+    </div>
+    <!-- /.app -->
+
+
+    <script type="text/javascript" src="socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
